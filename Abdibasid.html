@@ -664,35 +664,53 @@ span{
   .services h2{
 	margin-bottom: 3rem;
   }
-  /* HTML: <div class="loader"></div> */
+
+/* Add this CSS to your stylesheet */
 .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader-spinner {
   width: 50px;
-  aspect-ratio: 1;
-  color:#dc1818;
-  background:
-   radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%) top left,
-   radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
-   linear-gradient(to bottom left, currentColor 42%,#0000 43%) bottom left ,
-   linear-gradient(to bottom right,currentColor 42%,#0000 43%) bottom right;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  position: relative;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: var(--main-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  opacity: 0.4;
-  animation: l3 1s infinite;
+.loader.hidden {
+  opacity: 0;
+  transition: opacity 1s;
 }
-@keyframes l3 {
-  to {transform:scale(1.8);opacity:0}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
+
 }
 </style>
 <body>
-  <div class="loader"></div>
+
+<!-- Add this div at the beginning of your body tag -->
+<div class="loader">
+  <div class="loader-spinner"></div>
+</div>
+
   <!--box icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -956,6 +974,16 @@ span{
 </body>
 <script>
     // Created by Vaishnavi Jalkhare
+
+
+    // Add this JavaScript code to your script.js file
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loader');
+  loader.classList.add('hidden');
+  setTimeout(() => {
+    loader.remove();
+  }, 1000);
+});
 
 /*========= toggle icon navbar =======*/
 let menuIcon = document.querySelector('#menu-icon');
