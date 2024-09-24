@@ -1,4 +1,4 @@
-<!-- Created by Vaishnavi Jalkhare -->
+<!-- Created by Abdibasid Hussein -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -664,9 +664,35 @@ span{
   .services h2{
 	margin-bottom: 3rem;
   }
+  /* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  color:#dc1818;
+  background:
+   radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%) top left,
+   radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
+   linear-gradient(to bottom left, currentColor 42%,#0000 43%) bottom left ,
+   linear-gradient(to bottom right,currentColor 42%,#0000 43%) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  opacity: 0.4;
+  animation: l3 1s infinite;
+}
+@keyframes l3 {
+  to {transform:scale(1.8);opacity:0}
+}
 }
 </style>
 <body>
+  <div class="loader"></div>
   <!--box icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -690,7 +716,226 @@ span{
   </nav>
 </header>
 
-<img src="https://abdibasid1122.github.io/Maintenance-/IMG_6239.png" style="margin-top:20%; width:50%;margin-left:23%;">
+<!--home section design-->
+<section class="home" id="home">
+  <div class="home-content">
+	<h3>Hello, It's Me</h3>
+	<h1>Abdibasid Hussein</h1>
+	<h3>And I'm a <span class="multiple-text"></span></h3>
+	<p>I really enjoy solving problems as well as making things pretty and easy to use. I
+	  can't stop learning new things; the more, the better.</p>
+
+	<div class="social-media">
+	  <a href="#"><i class='bx bxl-facebook'></i></a>
+	  <a href="#"><i class='bx bxl-twitter'></i></a>
+	  <a href="https://www.instagram.com/notorious_baseed/?next=%2F"><i class='bx bxl-instagram-alt'></i></a>
+	  <a href="#"><i class="bx bxl-linkedin"></i></a>
+	</div>
+	<a href="https://docs.google.com/document/d/1eTzFbR1JL2GmDhHctYqGD3AP31ZCADrn6qX8P2PrXXc" class="btn">Download CV</a>
+  </div>
+  <div class="home-img">
+	<img src="v5.png" alt="">
+	<span class="home-imgHover"></span>
+  </div>
+
+
+</section>
+
+<!--about section describe-->
+<section class="about" id="about">
+  <div class="about-img">
+	<img src="https://avatars.githubusercontent.com/u/138727312?s=400&u=d786b46adf80de62267cb3588c3a8c9858e4f224&v=4" alt="">
+	<sapn class="circle-span"></sapn>
+  </div>
+
+  <div class="about-content">
+	<h2 class="heading">About <span>Me</span></h2>
+	<h3>Ethical Hacking  and Cyber Security</h3>
+	<p>I am a programmer analyst trainee at cognizant. I have been completed my internship from ICT Department and E-Government Mandera County. I have been completed my Diploma with computer science from Umma University with Credit on 25th July 2024. Am from Mandera County, Kenya.</p>
+	<a href="#" class="btn">Read More</a>
+  </div>
+</section>
+
+
+<!--educations-->
+
+<!--certificates-->
+<section class="services" id="services">
+  <h2 class="heading">My <span>Certificates</span></h2>
+   <div class="services-container">
+	<div class="services-box">
+	  <i class="bx bx-code-alt"></i>
+	  <h3>Web Developments</h3>
+	  <p>
+      Web development involves building websites and applications using languages like HTML, CSS, and JavaScript for the user interface, along with server-side technologies such as Python or PHP for functionality, ensuring a cohesive online experience.</p>
+<a href="#" class="btn">Read More</a>
+	</div>
+   
+	<div class="services-box">
+	  <i class="bx bxs-paint"></i>
+	  <h3>Graphics Design</h3>
+	  <p>Graphic design involves visual communication through typography, imagery, and layout. Designers utilize tools like Adobe Creative Suite to create visually compelling and coherent designs for branding, marketing, and various digital or print media applications.</p>
+<a href="#" class="btn">Read More</a>
+	</div>
+	<div class="services-box">
+	  <i class="bx bx-bar-chart-alt"></i>
+	  <h3>Digital Markting</h3>
+	  <p>
+      Digital marketing utilizes online channels such as social media, SEO, email, and content marketing to promote products or services. It focuses on reaching and engaging target audiences effectively, analyzing data for strategic optimization and improved online visibility.</p>
+<a href="#" class="btn">Read More</a>
+	</div>
+   </div>
+   </div>
+   </section>
+</section>
+
+
+
+
+<!--Portfolio-->
+
+<section class="portfolio" id="portfolio">
+	 <h2 class="heading">Latest <span>Projects</span></h2>
+   <p class="heading">Coming <span>Soon</span></p>
+
+  
+
+
+<!--skills-->
+<section class="skills" id="skills">
+  <h2 class="heading">My <span>skills</span></h2>
+  <div class="skills-row">
+	<div class="skills-column">
+	  <h3 class="title">Programming Skills</h3>
+
+	  <div class="skills-box">
+		<div class="skills-content">
+		<div class="progress">
+		  <h3>HTML <span>90%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>CSS <span>80%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>JavaScript <span>70%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>C <span>80%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>C++ <span>85%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>Python <span>90%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>SQL <span>80%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		</div>
+
+
+		</div>
+	</div>
+
+		<div class="skills-column">
+		  <h3 class="title">Miscellaneous</h3>
+		  <div class="skills-box">
+			<div class="skills-content">
+			<div class="progress">
+			  <h3>Object Oriented Programming <span>75%</span></h3>
+			  <div class="bar"><span></span></div>
+			</div>
+	
+			<div class="progress">
+			  <h3>Data structure <span>60%</span></h3>
+			  <div class="bar"><span></span></div>
+			</div>
+	
+		
+		<div class="progress">
+		  <h3>DBMS <span>80%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+	  
+		<div class="progress">
+		  <h3>Linux(OS) <span>80%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>Data Warehousing <span>75%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>Informatica PowerCenter <span>95%</span></h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+		<div class="progress">
+		  <h3>Machine Learning <span>95%</span> 
+			 </h3>
+		  <div class="bar"><span></span></div>
+		</div>
+
+			</div>
+			</div>
+	</div>
+
+  </div>
+</section>
+<!--contact-->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+  
+  <form action="#">
+	<div class="input-box">
+	  <div class="input-field">
+	  <input type="text" placeholder="Full Name" required>
+	  <span class="focus"></span>
+	  </div>
+	  <div class="input-field">
+	  <input type="email" placeholder="Email Address" required>
+	  <span class="focus"></span>
+</div>
+</div>
+<div class="input-box">
+  <div class="input-field">
+  <input type="text" placeholder="Full Name" required>
+  <span class="focus"></span>
+  </div>
+  <div class="input-field">
+  <input type="email" placeholder="Email Address" required>
+  <span class="focus"></span>
+</div>
+</div>
+	<div class="textarea-field">
+	  <textarea name="" id="" cols="30" rows="10" 
+		 placeholder="Your Message"></textarea>
+  </div>
+		 <div class="btn-box">
+
+	<input type="submit" value="send message"class="btn">
+  </div>
+
+  </form>
+  
+</section>
+
 <!--footer-->
 <footer class="footer">
   <div class="footer-text">
@@ -770,15 +1015,6 @@ const tped=new Typed('.multiple-text',{
 	backspeed:100,
 });
 </script>
-<script>
-  const copyrightYearElement = document.getElementById('copyright-year');
-
-function updateCopyrightYear() {
-  const currentYear = new Date().getFullYear();
-  copyrightYearElement.textContent = currentYear;
-}
-
-updateCopyrightYear();
-</script>
 </html>
+
 
